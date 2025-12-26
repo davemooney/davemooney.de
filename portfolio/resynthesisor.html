@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en-US" class=" custom-scrollbar-off">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://davemooney.de/xmlrpc.php">
+	<title>Resynthesisor &#8211; davemooney</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='https://use.typekit.net/' />
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel="alternate" type="application/rss+xml" title="davemooney &raquo; Feed" href="../feed" />
+<link rel="alternate" type="application/rss+xml" title="davemooney &raquo; Comments Feed" href="../comments/feed" />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.12.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script
+				src="https://www.googletagmanager.com/gtag/js?id=UA-148350021-1"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '8.12.1';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+															'ga-disable-UA-148350021-1',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+							
+														parameters.send_to = monsterinsights_frontend.ua;
+							__gtagDataLayer(type, name, parameters);
+													} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+															__gtagTracker('config', 'UA-148350021-1', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/davemooney.de\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='../wp-includes/css/dist/block-library/style.min.css%3Fver=6.1.1.css' media='all' />
+<link rel='stylesheet' id='wc-blocks-vendors-style-css' href='../wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css%3Fver=9.4.3.css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css' href='../wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css%3Fver=9.4.3.css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='../wp-includes/css/classic-themes.min.css%3Fver=1.css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--thb-accent: #ef173b;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('../index.html%3Fp=922.html');--wp--preset--duotone--grayscale: url('../index.html%3Fp=922.html');--wp--preset--duotone--purple-yellow: url('../index.html%3Fp=922.html');--wp--preset--duotone--blue-red: url('../index.html%3Fp=922.html');--wp--preset--duotone--midnight: url('../index.html%3Fp=922.html');--wp--preset--duotone--magenta-yellow: url('../index.html%3Fp=922.html');--wp--preset--duotone--purple-green: url('../index.html%3Fp=922.html');--wp--preset--duotone--blue-orange: url('../index.html%3Fp=922.html');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='default-icon-styles-css' href='../wp-content/plugins/svg-vector-icon-plugin/admin/css/wordpress-svg-icon-plugin-style.min.css%3Fver=6.1.1.css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='dashicons-css' href='../wp-includes/css/dashicons.min.css%3Fver=6.1.1.css' media='all' />
+<link rel='stylesheet' id='thb-fa-css' href='../wp-content/themes/werkstatt/assets/css/font-awesome.min.css%3Fver=4.7.4.css' media='all' />
+<link rel='stylesheet' id='thb-app-css' href='../wp-content/themes/werkstatt/assets/css/app.css%3Fver=4.7.4.css' media='all' />
+<style id='thb-app-inline-css' type='text/css'>
+.postid-922 .post-gallery.parallax {min-height:50vh;}h1,h2,h3,h4,h5,h6,.post.style9 .post-meta,.primary-font {font-family:futura-pt, 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}h1,.h1 {font-weight:900;font-size:48px;}h2 {font-weight:300;font-size:36px;}h3 {}h4 {}h5 {}h6 {font-weight:lighter;font-size:24px;}em {font-family:Playfair Display, 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}label {font-family:futura-pt, 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}label {}.thb-mobile-menu a {font-weight:lighter;}.thb-mobile-menu .sub-menu li a {}.thb-full-menu li a,.header.style3 .thb-full-menu>li>a {}.thb-full-menu .sub-menu li a,.header.style3 .thb-full-menu .sub-menu li a {}.thb-full-menu>li>a.social,.header.style3 .thb-full-menu.socials li a.social {}.footer h6,.footer.dark h6 {color:#c7cfee;font-weight:600;font-size:16px;text-transform:capitalize !important;}#footer .widget {font-size:14px;}#subfooter {}.subfooter .socials a {}body {font-family:attribute-mono, 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}input[type="submit"],.button,.btn,.btn-text,.btn[class*="thb-"]{font-family:futura-pt, 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';font-weight:400;letter-spacing:0.1em !important;}#mobile-menu,.header {font-family:attribute-mono, 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}.products .product .thb_title_holder h2 {}.product-detail .product-information h1.product_title {}.product-detail .product-information .woocommerce-product-details__short-description,.product-detail .product-information .woocommerce-product-details__short-description p {}.header .logolink .logoimg {max-height:36px;}.header .logolink .logoimg[src$=".svg"] {height:36px;}@media screen and (max-width:40.0625em) {.header .logolink .logoimg {max-height:36px;}.header .logolink .logoimg[src$=".svg"] {height:36px;}}@media only screen and (min-width:64.063em) {#mobile-menu.style1 {width:30%;}}.thb-portfolio #portfolio-1011.type-portfolio.style3:hover .portfolio-holder,.thb-portfolio #portfolio-1011.type-portfolio:not(.thb-gradient-hover):not(.thb-corner-hover) .portfolio-link,.thb-portfolio #portfolio-1011.type-portfolio.thb-corner-hover:hover .portfolio-link,.thb-portfolio #portfolio-1011.type-portfolio.style2 .portfolio-holder .portfolio-inner:not(.thb-image-hover),.thb-portfolio .portfolio-1011.type-portfolio.carousel_style3.style3_even:hover .portfolio-holder,.thb-portfolio .portfolio-1011.type-portfolio.carousel_style3:hover .portfolio-holder {background:#191919;}.thb-portfolio #portfolio-1011.type-portfolio.style6 .portfolio-holder:after {border-color:#191919;}.thb-portfolio #portfolio-1011.type-portfolio .thb-gradient-fill{background-image:-moz-linear-gradient(rgba(0,0,0,0),#191919);background-image:-webkit-linear-gradient(rgba(0,0,0,0),#191919);background-image:linear-gradient(rgba(0,0,0,0),#191919);}.thb-portfolio #portfolio-986.type-portfolio.style3:hover .portfolio-holder,.thb-portfolio #portfolio-986.type-portfolio:not(.thb-gradient-hover):not(.thb-corner-hover) .portfolio-link,.thb-portfolio #portfolio-986.type-portfolio.thb-corner-hover:hover .portfolio-link,.thb-portfolio #portfolio-986.type-portfolio.style2 .portfolio-holder .portfolio-inner:not(.thb-image-hover),.thb-portfolio .portfolio-986.type-portfolio.carousel_style3.style3_even:hover .portfolio-holder,.thb-portfolio .portfolio-986.type-portfolio.carousel_style3:hover .portfolio-holder {background:#191919;}.thb-portfolio #portfolio-986.type-portfolio.style6 .portfolio-holder:after {border-color:#191919;}.thb-portfolio #portfolio-986.type-portfolio .thb-gradient-fill{background-image:-moz-linear-gradient(rgba(0,0,0,0),#191919);background-image:-webkit-linear-gradient(rgba(0,0,0,0),#191919);background-image:linear-gradient(rgba(0,0,0,0),#191919);}.thb-portfolio #portfolio-922.type-portfolio.style3:hover .portfolio-holder,.thb-portfolio #portfolio-922.type-portfolio:not(.thb-gradient-hover):not(.thb-corner-hover) .portfolio-link,.thb-portfolio #portfolio-922.type-portfolio.thb-corner-hover:hover .portfolio-link,.thb-portfolio #portfolio-922.type-portfolio.style2 .portfolio-holder .portfolio-inner:not(.thb-image-hover),.thb-portfolio .portfolio-922.type-portfolio.carousel_style3.style3_even:hover .portfolio-holder,.thb-portfolio .portfolio-922.type-portfolio.carousel_style3:hover .portfolio-holder {background:#191919;}.thb-portfolio #portfolio-922.type-portfolio.style6 .portfolio-holder:after {border-color:#191919;}.thb-portfolio #portfolio-922.type-portfolio .thb-gradient-fill{background-image:-moz-linear-gradient(rgba(0,0,0,0),#191919);background-image:-webkit-linear-gradient(rgba(0,0,0,0),#191919);background-image:linear-gradient(rgba(0,0,0,0),#191919);}.thb-portfolio #portfolio-907.type-portfolio.style3:hover .portfolio-holder,.thb-portfolio #portfolio-907.type-portfolio:not(.thb-gradient-hover):not(.thb-corner-hover) .portfolio-link,.thb-portfolio #portfolio-907.type-portfolio.thb-corner-hover:hover .portfolio-link,.thb-portfolio #portfolio-907.type-portfolio.style2 .portfolio-holder .portfolio-inner:not(.thb-image-hover),.thb-portfolio .portfolio-907.type-portfolio.carousel_style3.style3_even:hover .portfolio-holder,.thb-portfolio .portfolio-907.type-portfolio.carousel_style3:hover .portfolio-holder {background:#191919;}.thb-portfolio #portfolio-907.type-portfolio.style6 .portfolio-holder:after {border-color:#191919;}.thb-portfolio #portfolio-907.type-portfolio .thb-gradient-fill{background-image:-moz-linear-gradient(rgba(0,0,0,0),#191919);background-image:-webkit-linear-gradient(rgba(0,0,0,0),#191919);background-image:linear-gradient(rgba(0,0,0,0),#191919);}.thb-portfolio #portfolio-859.type-portfolio.style3:hover .portfolio-holder,.thb-portfolio #portfolio-859.type-portfolio:not(.thb-gradient-hover):not(.thb-corner-hover) .portfolio-link,.thb-portfolio #portfolio-859.type-portfolio.thb-corner-hover:hover .portfolio-link,.thb-portfolio #portfolio-859.type-portfolio.style2 .portfolio-holder .portfolio-inner:not(.thb-image-hover),.thb-portfolio .portfolio-859.type-portfolio.carousel_style3.style3_even:hover .portfolio-holder,.thb-portfolio .portfolio-859.type-portfolio.carousel_style3:hover .portfolio-holder {background:#191919;}.thb-portfolio #portfolio-859.type-portfolio.style6 .portfolio-holder:after {border-color:#191919;}.thb-portfolio #portfolio-859.type-portfolio .thb-gradient-fill{background-image:-moz-linear-gradient(rgba(0,0,0,0),#191919);background-image:-webkit-linear-gradient(rgba(0,0,0,0),#191919);background-image:linear-gradient(rgba(0,0,0,0),#191919);}.thb-portfolio #portfolio-57.type-portfolio.style3:hover .portfolio-holder,.thb-portfolio #portfolio-57.type-portfolio:not(.thb-gradient-hover):not(.thb-corner-hover) .portfolio-link,.thb-portfolio #portfolio-57.type-portfolio.thb-corner-hover:hover .portfolio-link,.thb-portfolio #portfolio-57.type-portfolio.style2 .portfolio-holder .portfolio-inner:not(.thb-image-hover),.thb-portfolio .portfolio-57.type-portfolio.carousel_style3.style3_even:hover .portfolio-holder,.thb-portfolio .portfolio-57.type-portfolio.carousel_style3:hover .portfolio-holder {background:#191919;}.thb-portfolio #portfolio-57.type-portfolio.style6 .portfolio-holder:after {border-color:#191919;}.thb-portfolio #portfolio-57.type-portfolio .thb-gradient-fill{background-image:-moz-linear-gradient(rgba(0,0,0,0),#191919);background-image:-webkit-linear-gradient(rgba(0,0,0,0),#191919);background-image:linear-gradient(rgba(0,0,0,0),#191919);}.header:before,.header.style3 {background-color:#ffffff !important;background-image:none !important;}.page-id-922 #wrapper div[role="main"] {}.footer {background-color:#eaeaea !important;background-image:none !important;}.footer.dark h6,.footer h6 {color:#ffffff;}.footer.dark .widget,.footer .widget {color:#ffffff;}.footer.dark .widget p,.footer .widget p{color:inherit;}.thb-mobile-menu .nav-link-mask .nav-link-mask-text,#mobile-menu.light .thb-mobile-menu .nav-link-mask-text {color:#0a0a0a;}.footer .widget a { color:#ffffff !important; }.footer .widget a:hover { color:#f93f3f !important; }.footer.dark .widget a { color:#ffffff !important; }.footer.dark .widget a:hover { color:#f93f3f !important; }.row,.row.max_width {max-width:1440px;}#footer {padding-top:75px;;}.footer {background-size:contain !important;}.thb-portfolio .type-portfolio.thb-underline-hover .portfolio-link .thb-categories {font-weight:600;letter-spacing:0.1em;font-size:11px;text-transform:uppercase;margin-bottom:15px;}.thb-portfolio .type-portfolio.thb-underline-hover h2 {font-weight:600;text-align:left;max-width:240px;}.thb-placeholder first {}.portfolioHeroImage {width:calc(100% - 100px) !important;position:absolute;left:50px;bottom:50px;}.portfolioOverviewText{ margin-right:50px !important; padding-left:50px !important;}.portfolioOverviewImage {border:50px solid white;}.landingPage {background-size:cover;background-repeat:no-repeat;}.portfolio-holder {border-width:1px;border-color:#323232;border-style:solid;}.portfolio-holder:hover {border-width:1px;border-color:#ffffff;border-style:solid;}.portfoliom4lDeviceImage {width:calc(100% - 50px);padding-left:50px;}.testie{position:relative;padding:0px !important;margin:50px;}.subColumnText {padding-right:50px !important;}.m4lHeroImage { position:relative;bottom:50px;width:calc(100% - 100px) !important;left:50px;}@media screen and (min-width:900px) {.frontPageBlock {background-position:center !important;background-repeat:no-repeat !important;background-size:contain !important;}}@media screen and (max-width:900px) {.frontPageBlock {background-position:center !important;background-repeat:no-repeat !important;background-size:contain !important;}}.masonryBlockEdit {}#canvasContainer {position:absolute;left:50%;top:50%;}.daveContact {}.daveContactSubmit {}.contactMessageBody textArea{color:white !important;background-color:black !important;}input {color:white !important;background-color :black !important;}::-webkit-input-placeholder { color:#ffffff !important;}:-ms-input-placeholder { color:#ffffff !important;}::placeholder {color:#ffffff !important;}#mobile-menu svg {position:absolute;width:40px !important;height:40px !important;right:10px;top:0px;} #mobile-menu{//position:absolute;padding:50px !important;}@media only screen and (min-width:64.063em){#mobile-menu.style1{align-self:flex-end;width:40% !important;}#mobile-menu.style1 .mobile-menu-top .thb-mobile-menu, #mobile-menu.style3 .mobile-menu-top .thb-mobile-menu {align-self:flex-start !important;position:absolute!important;//bottom:50px!important;left:0px!important;}}label {color:white;font-family:attribute-mono;font-weight:100;}div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {background-color:#000000 !important;border:1px solid #ffff!important;color:#ffffff !important;font-size:1em;padding:10px 15px !important;}
+</style>
+<link rel='stylesheet' id='thb-style-css' href='../wp-content/themes/werkstatt/style.css%3Fver=4.7.4.css' media='all' />
+<link rel='stylesheet' id='thb-google-fonts-css' href='https://fonts.googleapis.com/css?family=Playfair+Display%3A400%2C500%2C600%2C700%2C800%2C900%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&#038;subset=latin&#038;display=swap&#038;ver=4.7.4' media='all' />
+<link rel='stylesheet' id='js_composer_front-css' href='../wp-content/plugins/js_composer/assets/css/js_composer.min.css%3Fver=6.10.0.css' media='all' />
+<script src='../wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js%3Fver=8.12.1' id='monsterinsights-frontend-script-js'></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/davemooney.de","hash_tracking":"false","ua":"UA-148350021-1","v4_id":""};/* ]]> */
+</script>
+<script src='../wp-includes/js/jquery/jquery.min.js%3Fver=3.6.1' id='jquery-core-js'></script>
+<script src='../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=3.3.2' id='jquery-migrate-js'></script>
+<script src='https://use.typekit.net/jka3amo.js?ver=4.7.4' id='thb-typekit-js'></script>
+<script id='thb-typekit-js-after'>
+try{Typekit.load({ async: true });}catch(e){}
+</script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/portfolio/922" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<meta name="generator" content="WooCommerce 7.4.0" />
+<link rel="canonical" href="../index.html%3Fp=922.html" />
+<link rel='shortlink' href='../index.html%3Fp=922.html' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed%3Furl=https:%252F%252Fdavemooney.de%252Fportfolio%252Fresynthesisor" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed%3Furl=https:%252F%252Fdavemooney.de%252Fportfolio%252Fresynthesisor&amp;format=xml" />
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<style type="text/css">
+body.custom-background #wrapper div[role="main"] { background-color: #ffffff; }
+</style>
+	<link rel="icon" href="../wp-content/uploads/2019/09/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="../wp-content/uploads/2019/09/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../wp-content/uploads/2019/09/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://davemooney.de/wp-content/uploads/2019/09/cropped-favicon-270x270.png" />
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1569852461862{background-color: #969696 !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><style type="text/css">/** Mega Menu CSS: fs **/</style>
+</head>
+<body class="portfolio-template-default single single-portfolio postid-922 theme-werkstatt woocommerce-no-js midnight_off header-lateral-off thb-snap-rows-off thb-dropdown-color-light thb-nav-menu-widget-columns-1 thb-header-fixed-off thb-header-fill-off thb_row_pagination_off lightbox-theme-dark right-click-off row_pagination_position-left light-title disable_header_fill-on disable-row-offset-off mm-link-animation-link-fill footer-shadow-none thb-borders-off overflow-off portfolio_title_animation-on product_style1_color-dark thb-single-product-ajax-on wpb-js-composer js-comp-ver-6.10.0 vc_responsive">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><div id="wrapper" class="thb-page-transition-on">
+	<!-- Start Content Click Capture -->
+<div class="click-capture"></div>
+<!-- End Content Click Capture -->
+<!-- Start Mobile Menu -->
+<nav id="mobile-menu" class="light style1" data-behaviour="thb-default" data-animation="style1">
+	<a href="../index.html%3Fp=922.html#" class="thb-close" title="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g fill="none" stroke="#000" stroke-width="2" stroke-miterlimit="10"><path d="m18.947 17.15l26.1 25.903"/><path d="m19.05 43.15l25.902-26.1"/></g></svg></a>
+			<div class="custom_scroll" id="menu-scroll">
+		<div>
+			<div class="mobile-menu-container">
+			<div class="mobile-menu-top">
+								<ul id="menu-navigation" class="thb-mobile-menu"><li id="menu-item-936" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-936 has-hash"><div class="link_container"><div class="link_inner"><a href="../index.html#home" data-content="Home" data-menubg=""><span class="nav-link-mask"><span class="nav-link-mask-text">Home</span></span></a></div></div></li>
+<li id="menu-item-4052" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4052"><div class="link_container"><div class="link_inner"><a href="../index.html#work" data-content="Work" data-menubg=""><span class="nav-link-mask"><span class="nav-link-mask-text">Work</span></span></a></div></div></li>
+<li id="menu-item-938" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-938"><div class="link_container"><div class="link_inner"><a data-content="Contact" data-menubg=""><span class="nav-link-mask"><span class="nav-link-mask-text">Contact</span></span></a></div></div></li>
+</ul>							</div>
+							<div class="mobile-menu-bottom">
+					<ul id="menu-secondary" class="thb-secondary-menu row small-up-2"><li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37 column"><a target="_blank" href="https://www.linkedin.com/in/daveemooney/">Linkedin</a></li>
+</ul>									</div>
+					</div>
+		</div>
+	</div>
+	</nav>
+<!-- End Mobile Menu -->
+	<!-- Start Header -->
+<header class="header style1 menu_style1">
+	<div class="row align-middle
+	expanded	">
+		<div class="small-12 columns regular-header">
+			<div class="logo-holder">
+				<a href="../index.html" class="logolink" title="davemooney">
+					<img src="../wp-content/uploads/2019/09/dm-copy-bl.png" class="logoimg logo-dark" alt="davemooney"/>
+					<img src="../wp-content/uploads/2019/09/dm-copy_4.png" class="logoimg logo-light" alt="davemooney"/>
+				</a>
+			</div>
+			<div>
+																							<a class="mobile-toggle style2">
+				<div>
+			<span></span><span></span><span></span>
+		</div>
+	</a>
+				</div>
+		</div>
+					<div class="small-12 columns portfolio-header">
+				<div class="thb-breadcrumb-holder">
+											<a href="../index.html" title="Back" class="home"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="309.1" height="162.4" viewBox="151.5 346.3 309.1 162.4" enable-background="new 151.47 346.319 309.06 162.356" xml:space="preserve"><path d="M151.5 427.5c0 4.5 2 8.8 5.5 11.7l78.5 65.9c2.9 2.4 6.4 3.6 9.8 3.6 4.4 0 8.7-1.9 11.7-5.5 5.4-6.5 4.6-16.1-1.9-21.5l-45.9-38.5H445.2c8.5 0 15.3-6.8 15.3-15.3 0-8.5-6.8-15.3-15.3-15.3H208.3l46.8-39.2c6.5-5.4 7.3-15.1 1.9-21.5 -5.4-6.5-15.1-7.3-21.5-1.9l-78.5 65.9C153.5 418.7 151.5 423 151.5 427.5z"/></svg></a>
+						<a href="../index.html" title="davemooney">Projects</a>
+											<span><div><em>-</em> Resynthesisor</div></span>
+				</div>
+										<a class="mobile-toggle style2">
+				<div>
+			<span></span><span></span><span></span>
+		</div>
+	</a>
+				</div>
+			</div>
+</header>
+<!-- End Header -->
+	<div role="main">
+	<article itemscope itemtype="http://schema.org/Article" class="post portfolio-detail  post-922 portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-dev portfolio-category-uxuiixd" role="article">
+								<div class="post-content">
+				<div data-midnight="dark-title" class="row wpb_row row-fluid no-row-padding full-width-row no-column-padding vc_custom_1569852461862 row-has-fill row-o-full-height row-o-columns-bottom row-o-content-bottom row-flex"><div class="wpb_column columns medium-12 thb-dark-column small-12"><div class="vc_column-inner   "><div class="wpb_wrapper">	<div id="thb-image-694ef7f79b2df" class="caption-style1 animation top-to-bottom alignleft full m4lHeroImage thb_image_link wp-caption">
+			<div class="thb-image-inner size_100">
+			<img width="3051" height="666" src="../wp-content/uploads/2019/09/ProjectTitle_re.png" class="thb_image   thb-ignore-lazyload attachment-full thb-lazyload lazyload" alt="" decoding="async" loading="lazy" title="ProjectTitle_re" sizes="(max-width: 3051px) 100vw, 3051px" data-src="https://davemooney.de/wp-content/uploads/2019/09/ProjectTitle_re.png" data-sizes="auto" data-srcset="https://davemooney.de/wp-content/uploads/2019/09/ProjectTitle_re.png 3051w, https://davemooney.de/wp-content/uploads/2019/09/ProjectTitle_re-768x168.png 768w, https://davemooney.de/wp-content/uploads/2019/09/ProjectTitle_re-1024x224.png 1024w, https://davemooney.de/wp-content/uploads/2019/09/ProjectTitle_re-640x140.png 640w, https://davemooney.de/wp-content/uploads/2019/09/ProjectTitle_re-320x70.png 320w, https://davemooney.de/wp-content/uploads/2019/09/ProjectTitle_re-1280x279.png 1280w, https://davemooney.de/wp-content/uploads/2019/09/ProjectTitle_re-1920x419.png 1920w, https://davemooney.de/wp-content/uploads/2019/09/ProjectTitle_re-20x4.png 20w, https://davemooney.de/wp-content/uploads/2019/09/ProjectTitle_re-600x131.png 600w" />
+		</div>
+					</div>
+	</div></div></div></div><div data-midnight="dark-title" class="row wpb_row row-fluid no-row-padding full-width-row no-column-padding row-o-full-height row-o-columns-top row-flex"><div class="wpb_column columns medium-12 thb-dark-column small-12"><div class="vc_column-inner   "><div class="wpb_wrapper"><div class="row wpb_row vc_inner row-fluid no-column-padding portfolioOverviewText row-o-content-top row-flex"><div class="subColumnText wpb_column columns medium-4 thb-dark-column small-12"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="vc_empty_space" id="thb-empty-space-694ef7f79c614"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<h1>Resynthesisor</h1>
+<h6>Time-stretching (Resynthesis) Sampler</h6>
+
+		</div>
+	</div>
+</div></div></div><div class="subColumnText wpb_column columns medium-4 thb-dark-column small-12"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="vc_empty_space" id="thb-empty-space-694ef7f79c89f"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>Resynthesisor is a M4L/Csound sampler device that allows typical sampler functionality while also offering users the possibility to timestretch audio files using resynsthesis-based techniques.</p>
+
+		</div>
+	</div>
+</div></div></div><div class="subColumnText wpb_column columns medium-4 thb-dark-column small-12"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="vc_empty_space" id="thb-empty-space-694ef7f79ca26"  style="height: 50px" ><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<h6>Services</h6>
+<p><span class="s2">UX/IxD/UI/Dev/QA</span></p>
+
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<h6>Year</h6>
+<p><span class="s2">2012</span></p>
+
+		</div>
+	</div>
+</div></div></div></div><div class="row wpb_row vc_inner row-fluid"><div class="wpb_column columns medium-12 thb-dark-column small-12"><div class="vc_column-inner  "><div class="wpb_wrapper">	<div id="thb-image-694ef7f79ccff" class="caption-style1  alignleft  portfoliom4lDeviceImage thb_image_link wp-caption">
+			<div class="thb-image-inner size_100">
+			<img width="3640" height="1764" src="../wp-content/uploads/2019/09/Group-2_resynth.png" class="thb_image   thb-ignore-lazyload attachment-full thb-lazyload lazyload" alt="" decoding="async" loading="lazy" title="Group 2_resynth" sizes="(max-width: 3640px) 100vw, 3640px" data-src="https://davemooney.de/wp-content/uploads/2019/09/Group-2_resynth.png" data-sizes="auto" data-srcset="https://davemooney.de/wp-content/uploads/2019/09/Group-2_resynth.png 3640w, https://davemooney.de/wp-content/uploads/2019/09/Group-2_resynth-768x372.png 768w, https://davemooney.de/wp-content/uploads/2019/09/Group-2_resynth-1024x496.png 1024w, https://davemooney.de/wp-content/uploads/2019/09/Group-2_resynth-640x310.png 640w, https://davemooney.de/wp-content/uploads/2019/09/Group-2_resynth-20x9.png 20w, https://davemooney.de/wp-content/uploads/2019/09/Group-2_resynth-320x155.png 320w, https://davemooney.de/wp-content/uploads/2019/09/Group-2_resynth-1280x620.png 1280w, https://davemooney.de/wp-content/uploads/2019/09/Group-2_resynth-1920x930.png 1920w, https://davemooney.de/wp-content/uploads/2019/09/Group-2_resynth-600x291.png 600w" />
+		</div>
+					</div>
+	</div></div></div></div></div></div></div></div>
+			</div>
+			</article>
+
+			<div class="portfolio_nav">
+		<div class="row full-width-row">
+			<div class="small-5 columns">
+									<a href="../index.html%3Fp=907.html" class="post_nav_link prev">
+											<div class="inner"><img src="../wp-content/uploads/2019/09/Artboardgranx2-320x240.png" alt="Granulisor" /></div>					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="309.1" height="162.4" viewBox="151.5 346.3 309.1 162.4" enable-background="new 151.47 346.319 309.06 162.356" xml:space="preserve"><path d="M151.5 427.5c0 4.5 2 8.8 5.5 11.7l78.5 65.9c2.9 2.4 6.4 3.6 9.8 3.6 4.4 0 8.7-1.9 11.7-5.5 5.4-6.5 4.6-16.1-1.9-21.5l-45.9-38.5H445.2c8.5 0 15.3-6.8 15.3-15.3 0-8.5-6.8-15.3-15.3-15.3H208.3l46.8-39.2c6.5-5.4 7.3-15.1 1.9-21.5 -5.4-6.5-15.1-7.3-21.5-1.9l-78.5 65.9C153.5 418.7 151.5 423 151.5 427.5z"/></svg>						<strong>
+														Previous Project (p)													</strong>
+						<span>Granulisor</span>
+					</a>
+								</div>
+			<div class="small-2 columns center_link">
+				<a href="../index.html" title="Back">
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="20" height="20" viewBox="296.5 494.5 20 20" enable-background="new 296.5 494.5 20 20" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M296.5 494.5h8v8h-8V494.5z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M308.5 494.5h8v8h-8V494.5z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M296.5 506.5h8v8h-8V506.5z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M308.5 506.5h8v8h-8V506.5z"/></svg>				</a>
+			</div>
+			<div class="small-5 columns">
+									<a href="../index.html%3Fp=986.html" class="post_nav_link next">
+													<div class="inner"><img src="../wp-content/uploads/2016/09/front-view-of-macbook-pro-clay-dark-1-320x240.png" alt="Komplete Kontrol" /></div>						<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="309.1" height="162.4" viewBox="151.5 346.3 309.1 162.4" enable-background="new 151.47 346.319 309.06 162.356" xml:space="preserve"><path d="M455.1 415.8l-78.5-65.9c-6.5-5.4-16.1-4.6-21.5 1.9 -5.4 6.5-4.6 16.1 1.9 21.5l46.8 39.2H166.8c-8.5 0-15.3 6.8-15.3 15.3 0 8.5 6.8 15.3 15.3 15.3h236l-45.9 38.5c-6.5 5.4-7.3 15.1-1.9 21.5 3 3.6 7.4 5.5 11.7 5.5 3.5 0 7-1.2 9.8-3.6l78.5-65.9c3.5-2.9 5.5-7.2 5.5-11.7S458.5 418.7 455.1 415.8z"/></svg>						<strong>
+															Next Project (n)													</strong>
+						<span>Komplete Kontrol</span>
+
+					</a>
+								</div>
+		</div>
+	</div>
+				</div><!-- End role["main"] -->
+	<div class="fixed-footer-container">
+					</div> <!-- End .fixed-footer-container -->
+		</div> <!-- End #wrapper -->
+
+		<a href="../index.html%3Fp=922.html#" title="Scroll To Top" id="scroll_to_top">
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="10" height="17" viewBox="0 0 10 17" enable-background="new 0 0 10 17" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.2 4.2L5.7 0.7C5.5 0.5 5.3 0.4 5 0.4c-0.3 0-0.5 0.1-0.7 0.3L0.8 4.2c-0.4 0.4-0.4 1 0 1.4 0.4 0.4 1 0.4 1.4 0L4 3.8v11.9c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1V3.8l1.8 1.8c0.4 0.4 1 0.4 1.4 0S9.6 4.6 9.2 4.2z"/></svg>		</a>
+		<script type="text/html" id="wpb-modifications"></script>	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script src='../wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js%3Fver=2.7.0-wc.7.4.0' id='jquery-blockui-js'></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/davemooney.de","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script src='../wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js%3Fver=7.4.0' id='wc-add-to-cart-js'></script>
+<script src='../wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js%3Fver=2.1.4-wc.7.4.0' id='js-cookie-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script src='../wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js%3Fver=7.4.0' id='woocommerce-js'></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_dc62653614a5863eabbf375ade20e0e4","fragment_name":"wc_fragments_dc62653614a5863eabbf375ade20e0e4","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script src='../wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js%3Fver=7.4.0' id='wc-cart-fragments-js'></script>
+<script src='../wp-content/themes/werkstatt/assets/js/vendor.min.js%3Fver=4.7.4' id='thb-vendor-js'></script>
+<script src='../wp-includes/js/underscore.min.js%3Fver=1.13.4' id='underscore-js'></script>
+<script type='text/javascript' id='thb-app-js-extra'>
+/* <![CDATA[ */
+var themeajax = {"url":"https:\/\/davemooney.de\/wp-admin\/admin-ajax.php","l10n":{"of":"%curr% of %total%","loading":"Loading ...","lightbox_loading":"Loading...","nomore":"No More Posts","nomore_products":"All Products Loaded","loadmore":"Load More","added":"Added To Cart","added_svg":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 64 64\" enable-background=\"new 0 0 64 64\"><path fill=\"none\" stroke=\"#000\" stroke-width=\"2\" stroke-linejoin=\"bevel\" stroke-miterlimit=\"10\" d=\"m13 33l12 12 24-24\"\/><\/svg>","prev_arrow_key":"Previous (Left arrow key)","next_arrow_key":"Next (Right arrow key)","lightbox_close":"Close (Esc)","adding_to_cart":"Adding to Cart"},"svg":{"prev_arrow":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\"\r\n\t width=\"30px\" height=\"18px\" viewBox=\"0 0 30 18\" enable-background=\"new 0 0 30 18\" xml:space=\"preserve\">\r\n<path class=\"handle\" d=\"M2.511,9.007l7.185-7.221c0.407-0.409,0.407-1.071,0-1.48s-1.068-0.409-1.476,0L0.306,8.259\r\n\tc-0.408,0.41-0.408,1.072,0,1.481l7.914,7.952c0.407,0.408,1.068,0.408,1.476,0s0.407-1.07,0-1.479L2.511,9.007z\"\/>\r\n<path class=\"bar\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30,9c0,0.553-0.447,1-1,1H1c-0.551,0-1-0.447-1-1c0-0.552,0.449-1,1-1h28.002\r\n\tC29.554,8,30,8.448,30,9z\"\/>\r\n<\/svg>\r\n"},"settings":{"current_url":"https:\/\/davemooney.de\/portfolio\/resynthesisor","portfolio_title_animation":"on","page_transition":"on","page_transition_style":"thb-fade","page_transition_in_speed":"1000","page_transition_out_speed":"500","shop_product_listing_pagination":"style1","right_click":"off","mobile_menu_speed":"0.1"},"sounds":{"music_sound":"off","music_sound_toggle_home":"on","music_sound_file":false,"menu_item_hover_sound":"on","menu_item_hover_sound_file":"https:\/\/davemooney.de\/wp-content\/themes\/werkstatt\/assets\/sounds\/hover.mp3","menu_open_sound":"on","menu_open_sound_file":"https:\/\/davemooney.de\/wp-content\/themes\/werkstatt\/assets\/sounds\/open.mp3","menu_close_sound":"on","menu_close_sound_file":"https:\/\/davemooney.de\/wp-content\/themes\/werkstatt\/assets\/sounds\/close.mp3","click_sound":"on","click_sound_file":"https:\/\/davemooney.de\/wp-content\/themes\/werkstatt\/assets\/sounds\/click.mp3"}};
+/* ]]> */
+</script>
+<script src='../wp-content/themes/werkstatt/assets/js/app.min.js%3Fver=4.7.4' id='thb-app-js'></script>
+<script src='../wp-includes/js/hoverIntent.min.js%3Fver=1.10.2' id='hoverIntent-js'></script>
+<script type='text/javascript' id='megamenu-js-extra'>
+/* <![CDATA[ */
+var megamenu = {"timeout":"300","interval":"100"};
+/* ]]> */
+</script>
+<script src='../wp-content/plugins/megamenu/js/maxmegamenu.js%3Fver=3.1.1' id='megamenu-js'></script>
+<script src='../wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js%3Fver=6.10.0' id='wpb_composer_front_js-js'></script>
+	<aside id="searchpopup" class="light">
+		<a href="../index.html%3Fp=922.html#" class="thb-search-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g fill="none" stroke="#000" stroke-width="2" stroke-miterlimit="10"><path d="m18.947 17.15l26.1 25.903"/><path d="m19.05 43.15l25.902-26.1"/></g></svg></a>
+		<!-- Start SearchForm -->
+<form method="get" class="searchform" role="search" action="../index.html">
+	<fieldset>
+		<input name="s" type="text" class="s small-12" placeholder="Type here to search">
+		<input type="submit" class="btn accent" value="Search" />
+	</fieldset>
+</form>
+<!-- End SearchForm -->
+		<div class="cc"></div>
+	</aside>
+		</body>
+</html>
